@@ -38,7 +38,7 @@ public class CriarContaActivity extends AppCompatActivity implements View.OnClic
             ( (EditText) findViewById(R.id.confirmarSenhaPswd) ).setText("");
             Toast.makeText(
                     getApplicationContext(),
-                    "AS SENHAS DIGITADAS NÃO SÃO IGUAIS!",
+                    "AS SENHAS DIGITADAS DEVEM SER IGUAIS!",
                     Toast.LENGTH_SHORT
             ).show();
         }
