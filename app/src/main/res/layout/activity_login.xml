@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.root.findsheep.MainActivity"
+    tools:context="com.findcheap.findcheap.LoginActivity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
@@ -12,7 +12,6 @@
         android:id="@+id/sheepLogoImg"
         android:layout_width="175dp"
         android:layout_height="105dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/loginTxt"
         app:layout_constraintLeft_toLeftOf="@+id/loginTxt"
@@ -23,33 +22,36 @@
 
     <EditText
         android:id="@+id/loginTxt"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="3dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="Login"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/senhaPsswd"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/senhaPsswd"
         app:layout_constraintRight_toRightOf="@+id/senhaPsswd" />
 
     <EditText
         android:id="@+id/senhaPsswd"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="42dp"
         android:layout_marginBottom="33dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/economizarBtn"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="@+id/economizarBtn"
-        app:layout_constraintRight_toRightOf="@+id/economizarBtn"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp" />
+        app:layout_constraintRight_toRightOf="@+id/economizarBtn" />
 
     <Button
         android:id="@+id/economizarBtn"
@@ -69,20 +71,22 @@
         android:layout_marginBottom="71dp"
         android:onClick="onClickCriarContaBtn"
         android:text="Criar conta"
-        app:layout_constraintBottom_toTopOf="@+id/esqueciSenhaTxtVw"
+        app:layout_constraintBottom_toTopOf="@+id/esqueceuSenhaTxtVw"
         app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintLeft_toLeftOf="@+id/esqueciSenhaTxtVw"
-        app:layout_constraintRight_toRightOf="@+id/esqueciSenhaTxtVw" />
+        app:layout_constraintLeft_toLeftOf="@+id/esqueceuSenhaTxtVw"
+        app:layout_constraintRight_toRightOf="@+id/esqueceuSenhaTxtVw" />
 
     <TextView
-        android:id="@+id/esqueciSenhaTxtVw"
+        android:id="@+id/esqueceuSenhaTxtVw"
         android:layout_width="179dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:onClick="onClickEsqueceuSenhaTxtVw"
         android:text="Esqueci minha senha"
         android:textSize="18sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="32dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

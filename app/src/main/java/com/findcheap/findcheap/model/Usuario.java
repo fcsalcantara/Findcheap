@@ -37,7 +37,8 @@ public class Usuario {
     public boolean equals(Object o) {
         if (o instanceof Usuario) {
             Usuario u = (Usuario) o;
-            return this.email.equalsIgnoreCase(u.getEmail()) && this.senha.equalsIgnoreCase(u.getSenha());
+            return this.email.equalsIgnoreCase(u.getEmail())
+                    && this.senha.equalsIgnoreCase(u.getSenha());
         } else {
             return false;
         }
