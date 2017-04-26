@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+
 public class PrincipalActivity extends AppCompatActivity {
 
     @Override
@@ -16,11 +17,14 @@ public class PrincipalActivity extends AppCompatActivity {
 
             Toast.makeText(getApplicationContext(), "Usuário \"" + LoginActivity.uLogado.toString()
                     + "\" logado.", Toast.LENGTH_SHORT).show();
+
         }
+
     }
 
     public void onClickBarCodeImg(View v) {
         startActivity(new Intent(this, EntradaProdutoActivity.class));
     }
+
 
 }

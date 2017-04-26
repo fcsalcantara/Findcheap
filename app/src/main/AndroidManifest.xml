@@ -20,7 +20,11 @@
         <activity android:name=".EsqueceuSenhaActivity" />
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".EntradaProdutoActivity" />
-        <activity android:name=".SelecionarProdutoActivity"></activity>
+        <activity android:name=".SelecionarProdutoActivity" />
+        <activity
+            android:name=".MainTab"
+            android:label="@string/title_activity_main_tab"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
